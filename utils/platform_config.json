@@ -1,0 +1,32 @@
+{
+  "rocky8": {
+    "client_host": "10.160.52.226",
+    "client_username": "root",
+    "client_password": "deleteme123!",
+    "greenplum_host": "10.160.52.227",
+    "greenplum_username": "gpadmin",
+    "greenplum_password": "deleteme123!",
+    "port": 5432,
+    "database": "postgres"
+  },
+  "rocky9": {
+    "client_host": "10.160.52.22",
+    "client_username": "root",
+    "client_password": "deleteme123!",
+    "greenplum_host": "10.160.52.227",
+    "greenplum_username": "gpadmin",
+    "greenplum_password": "deleteme123!",
+    "port": 5432,
+    "database": "postgres"
+  },
+  "default": {
+    "client_host": "10.160.52.226",
+    "client_username": "root",
+    "client_password": "deleteme123!",
+    "greenplum_host": "10.160.52.227",
+    "greenplum_username": "gpadmin",
+    "greenplum_password": "deleteme123!",
+    "port": 5432,
+    "database": "postgres"
+  }
+}
