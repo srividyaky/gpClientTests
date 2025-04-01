@@ -1,5 +1,4 @@
 name: Greenplum Client Tests
-
 on:
   workflow_dispatch:
     inputs:
@@ -7,25 +6,21 @@ on:
         description: 'Branch to run tests on'
         required: true
         default: 'main'
-
 jobs:
   test-rocky8:
-    runs-on: [self-hosted, rocky8]
+    runs-on: runner
     steps:
     - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.branch }}
-
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.9'
-
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
     - name: Run Tests on Rocky 8
       env:
         GPDB_PLATFORM: rocky8
