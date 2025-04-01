@@ -8,7 +8,7 @@ on:
         default: 'main'
 jobs:
   test-rocky8:
-    runs-on: runner
+    runs-on: [self-hosted, Linux, X64]
     steps:
     - uses: actions/checkout@v3
       with:
