@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to run tests on'
+        description: 'Branch to run tests on it'
         required: true
         default: 'main'
 jobs:
